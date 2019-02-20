@@ -1,0 +1,756 @@
+include pug/common/_head
+	block content
+			include pug/common/_header
+			main#main
+				.container
+					#post-1000.post-1000.post.type-post
+						.title.title-decor
+							h1 Gutemberg Block Unit Test
+							p.meta-info
+								a(href='http://example.com/2009/05/', rel='bookmark')
+									time(datetime='2009-05-15')
+										| May 15th, 2009
+								|
+								| by
+								|
+								a(href='http://example.com/author/fasttest/') fasttest
+						.content
+							.tetx-content
+								p
+									| Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.
+								span#more-1000
+								hr.wp-block-separator
+								h1 Heading One
+								h2 Heading Two
+								h3 Heading Three
+								h4 Heading Four
+								h5 Heading Five
+								h6 Heading Six
+								hr.wp-block-separator
+								p.wp-block-subhead
+									| This is a subhead block, where you can add a little extra blurb about your post or page. Cool yeah?
+								hr.wp-block-separator
+								h2 Preformatted Block
+								<pre class="wp-block-preformatted"><strong>The Road Not Taken</strong>, <em>by Robert Frost</em><br><br>Two roads diverged in a yellow wood,<br>And sorry I could not travel both<br>And be one traveler, long I stood <br>And looked down one as far as I could<br>To where it bent in the undergrowth;<br>Then took the other, as just as fair,<br>And having perhaps the better claim,<br>Because it was grassy and wanted wear;<br>Though as for that the passing there<br>Had worn them really about the same,<br>And both that morning equally lay<br>In leaves no step had trodden black.<br>Oh, I kept the first for another day!<br>Yet knowing how way leads on to way,<br>I doubted if I should ever come back.<br>I shall be telling this with a sigh<br>Somewhere ages and ages hence:<br>Two roads diverged in a wood, and I—<br>I took the one less traveled by,<br>And that has made all the difference.<br><br>...and heres a line of some really, really, really, really long text, just to see how it is handled and to find out how it overflows;</pre>
+								hr.wp-block-separator
+								h2 Ordered List
+								ol
+									li Nullam id dolor id nibh ultricies vehicula ut id elit.
+									li
+										| Donec ullamcorper nulla non metus auctor fringilla.
+										ol
+											li Condimentum euismod aenean.
+											li Purus commodo ridiculus.
+											li Nibh commodo vestibulum.
+									li Cras justo odio, dapibus ac facilisis in.
+								hr.wp-block-separator
+								h2 Unordered List
+								ul
+									li Nullam id dolor id nibh ultricies vehicula ut id elit.
+									li
+										| Donec ullamcorper nulla non metus auctor fringilla.
+										ul
+											li Nibh commodo vestibulum.
+											li Aenean eu leo quam.
+											li Pellentesque ornare sem lacinia.
+									li Cras justo odio, dapibus ac facilisis in.
+								hr.wp-block-separator
+								h2 Verse
+								p This is an example of the core Gutenberg verse block.
+								<pre class="wp-block-verse">A block for haiku? <br>Why not? <br>Blocks for all the things!</pre>
+								h2 Separator
+								p
+									| Here are examples of the three separator styles of the core Gutenberg separator block.
+								hr.wp-block-separator
+								hr.wp-block-separator.is-style-wide
+								hr.wp-block-separator.is-style-dots
+								h2 Table
+								p Here is an example of the core Gutenberg table block. 
+								table.wp-block-table
+									tbody
+										tr
+											td Employee
+											td Salary
+											td Position
+										tr
+											td
+												| Jane Doe
+												br
+											td $100k
+											td CEO
+										tr
+											td John Doe
+											td $100k
+											td CTO
+										tr
+											td Jane Bloggs
+											td $100k
+											td Engineering
+										tr
+											td Fred Bloggs
+											td $100k
+											td Marketing
+								hr.wp-block-separator
+								h2 Latest Posts, List View
+								p
+									| Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+								ul.wp-block-latest-posts
+									li
+										a(href='http://example.com/hello-world/') Hello world!
+									li
+										a(href='http://example.com/hello-world/') Hello world!
+									li
+										a(href='http://example.com01/11/markup-html-tags-and-formatting/') Markup: HTML Tags and Formatting
+									li
+										a(href='http://example.com01/10/markup-image-alignment/') Markup: Image Alignment
+									li
+										a(href='http://example.com01/09/markup-text-alignment/') Markup: Text Alignment
+								h2 Latest Posts, Grid View
+								p
+									| And now for the Grid View. The Latest Posts block also displays at wide and full width alignments, so be sure to check those styles as well.
+								ul.wp-block-latest-posts.is-grid.columns-2
+									li
+										a(href='http://example.com/hello-world/') Hello world!
+									li
+										a(href='http://example.com/hello-world/') Hello world!
+									li
+										a(href='http://example.com01/11/markup-html-tags-and-formatting/') Markup: HTML Tags and Formatting
+									li
+										a(href='http://example.com01/10/markup-image-alignment/') Markup: Image Alignment
+									li
+										a(href='http://example.com01/09/markup-text-alignment/') Markup: Text Alignment
+								hr.wp-block-separator
+								h2 Blockquote
+								p
+									| Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna sed diam ed diam eget risus varius eget.
+								blockquote.wp-block-quote(style='text-align:left')
+									p
+										| Donec sed odio dui. Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio.
+									cite Rich Tabor
+								p
+									| Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna sed diam ed diam eget risus varius eget.
+								hr.wp-block-separator
+								h2 Alternate Blockquote
+								p
+									| The alternate block quote style can be tarageted using the
+									strong .wp-block-quote.is-large
+									| . CSS selector. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+								blockquote.wp-block-quote.is-large(style='text-align:left')
+									p
+										| Donec sed odio dui. Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+									cite Rich Tabor
+								p
+									| Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna sed diam ed diam eget risus varius eget.
+								hr.wp-block-separator
+								h2 Audio
+								p
+									| Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit.
+									strong Center aligned
+									| :
+								figure.wp-block-audio.aligncenter
+									audio(controls='', src='https://example.com')
+									figcaption An example of an Audio Block caption
+								p
+									| Curabitur blandit tempus porttitor. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Curabitur blandit tempus porttitor.
+								hr.wp-block-separator
+								h2 Buttons
+								p
+									| Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit.
+									strong Center aligned
+									| :
+								.wp-block-button.aligncenter
+									a.wp-block-button__link(href='https://themebeans.com') Center Aligned Button
+								p
+									| Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+								.wp-block-button.alignleft
+									a.wp-block-button__link(href='https://themebeans.com') Left Aligned Button
+								p
+									| Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius.
+								.wp-block-button.alignright
+									a.wp-block-button__link Right Aligned Button
+								p
+									| Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius.
+								hr.wp-block-separator
+								h2 Categories
+								ul.wp-block-categories.wp-block-categories-list.aligncenter
+									li.cat-item.cat-item-11
+										a(href='http://example.com/category/aciform/') aciform
+										|  (1)
+										ul.children
+											li.cat-item.cat-item-55
+												a(href='http://example.com/category/aciform/sub/') sub
+												|  (1)
+									li.cat-item.cat-item-12
+										a(href='http://example.com/category/antiquarianism/') antiquarianism
+										|  (1)
+									li.cat-item.cat-item-13
+										a(href='http://example.com/category/arrangement/') arrangement
+										|  (1)
+									li.cat-item.cat-item-14
+										a(href='http://example.com/category/asmodeus/') asmodeus
+										|  (1)
+									li.cat-item.cat-item-16
+										a(href='http://example.com/category/broder/') broder
+										|  (1)
+									li.cat-item.cat-item-17
+										a(href='http://example.com/category/buying/') buying
+										|  (1)
+									li.cat-item.cat-item-18
+										a(href='http://example.com/category/cat-a/') Cat A
+										|  (1)
+									li.cat-item.cat-item-19
+										a(href='http://example.com/category/cat-b/') Cat B
+										|  (1)
+									li.cat-item.cat-item-20
+										a(href='http://example.com/category/cat-c/') Cat C
+										|  (1)
+									li.cat-item.cat-item-21
+										a(href='http://example.com/category/championship/') championship
+										|  (1)
+									li.cat-item.cat-item-22
+										a(href='http://example.com/category/chastening/') chastening
+										|  (1)
+									li.cat-item.cat-item-23
+										a(href='http://example.com/category/clerkship/') clerkship
+										|  (1)
+									li.cat-item.cat-item-24
+										a(href='http://example.com/category/disinclination/') disinclination
+										|  (1)
+									li.cat-item.cat-item-25
+										a(href='http://example.com/category/disinfection/') disinfection
+										|  (1)
+									li.cat-item.cat-item-26
+										a(href='http://example.com/category/dispatch/') dispatch
+										|  (1)
+									li.cat-item.cat-item-27
+										a(href='http://example.com/category/echappee/') echappee
+										|  (1)
+									li.cat-item.cat-item-28
+										a(href='http://example.com/category/edge-case-2/', title='Posts that have edge-case related tests') Edge Case
+										|  (6)
+									li.cat-item.cat-item-29
+										a(href='http://example.com/category/enphagy/') enphagy
+										|  (1)
+									li.cat-item.cat-item-30
+										a(href='http://example.com/category/equipollent/') equipollent
+										|  (1)
+									li.cat-item.cat-item-31
+										a(href='http://example.com/category/fatuity/') fatuity
+										|  (1)
+									li.cat-item.cat-item-32
+										a(href='http://example.com/category/foo-a/') Foo A
+										|  (1)
+									li.cat-item.cat-item-33
+										a(href='http://example.com/category/foo-parent/') Foo Parent
+										|  (1)
+										ul.children
+											li.cat-item.cat-item-73
+												a(href='http://example.com/category/foo-parent/foo-a-foo-parent/') Foo A
+												|  (1)
+									li.cat-item.cat-item-34
+										a(href='http://example.com/category/gaberlunzie/') gaberlunzie
+										|  (1)
+									li.cat-item.cat-item-35
+										a(href='http://example.com/category/illtempered/') illtempered
+										|  (1)
+									li.cat-item.cat-item-36
+										a(href='http://example.com/category/insubordination/') insubordination
+										|  (1)
+									li.cat-item.cat-item-37
+										a(href='http://example.com/category/lender/') lender
+										|  (1)
+									li.cat-item.cat-item-38
+										a(href='http://example.com/category/markup/', title='Posts in this category test markup tags and styles.') Markup
+										|  (6)
+									li.cat-item.cat-item-39
+										a(href='http://example.com/category/media-2/', title='Posts that have media-related tests') Media
+										|  (2)
+									li.cat-item.cat-item-40
+										a(href='http://example.com/category/monosyllable/') monosyllable
+										|  (1)
+									li.cat-item.cat-item-41
+										a(href='http://example.com/category/packthread/') packthread
+										|  (1)
+									li.cat-item.cat-item-42
+										a(href='http://example.com/category/palter/') palter
+										|  (1)
+									li.cat-item.cat-item-43
+										a(href='http://example.com/category/papilionaceous/') papilionaceous
+										|  (1)
+									li.cat-item.cat-item-44
+										a(href='http://example.com/category/parent/') Parent
+										|  (1)
+										ul.children
+											li.cat-item.cat-item-66
+												a(href='http://example.com/category/parent/child-1/') Child 1
+												|  (1)
+												ul.children
+													li.cat-item.cat-item-67
+														a(href='http://example.com/category/parent/child-1/child-2/') Child 2
+														|  (1)
+									li.cat-item.cat-item-45
+										a(href='http://example.com/category/parent-category/', title='This is a parent category. It will contain child categories') Parent Category
+										|  (1)
+										ul.children
+											li.cat-item.cat-item-68
+												a(href='http://example.com/category/parent-category/child-category-01/', title='This is a description for the Child Category 01.') Child Category 01
+												|  (1)
+											li.cat-item.cat-item-69
+												a(href='http://example.com/category/parent-category/child-category-02/', title='This is a description for the Child Category 02.') Child Category 02
+												|  (1)
+											li.cat-item.cat-item-70
+												a(href='http://example.com/category/parent-category/child-category-03/', title='This is a description for the Child Category 03.') Child Category 03
+												|  (1)
+												ul.children
+													li.cat-item.cat-item-74
+														a(href='http://example.com/category/parent-category/child-category-03/grandchild-category/', title='This is a description for the Grandchild Category.') Grandchild Category
+														|  (1)
+											li.cat-item.cat-item-71
+												a(href='http://example.com/category/parent-category/child-category-04/', title='This is a description for the Child Category 04.') Child Category 04
+												|  (1)
+											li.cat-item.cat-item-72
+												a(href='http://example.com/category/parent-category/child-category-05/', title='This is a description for the Child Category 05.') Child Category 05
+												|  (1)
+									li.cat-item.cat-item-46
+										a(href='http://example.com/category/personable/') personable
+										|  (1)
+									li.cat-item.cat-item-47
+										a(href='http://example.com/category/post-formats/', title='Posts in this category test post formats.') Post Formats
+										|  (16)
+									li.cat-item.cat-item-48
+										a(href='http://example.com/category/propylaeum/') propylaeum
+										|  (1)
+									li.cat-item.cat-item-49
+										a(href='http://example.com/category/pustule/') pustule
+										|  (1)
+									li.cat-item.cat-item-50
+										a(href='http://example.com/category/quartern/') quartern
+										|  (1)
+									li.cat-item.cat-item-51
+										a(href='http://example.com/category/scholarship/') scholarship
+										|  (1)
+									li.cat-item.cat-item-52
+										a(href='http://example.com/category/selfconvicted/') selfconvicted
+										|  (1)
+									li.cat-item.cat-item-53
+										a(href='http://example.com/category/showshoe/') showshoe
+										|  (1)
+									li.cat-item.cat-item-54
+										a(href='http://example.com/category/sloyd/') sloyd
+										|  (1)
+									li.cat-item.cat-item-56
+										a(href='http://example.com/category/sublunary/') sublunary
+										|  (1)
+									li.cat-item.cat-item-57
+										a(href='http://example.com/category/tamtam/') tamtam
+										|  (1)
+									li.cat-item.cat-item-58
+										a(href='http://example.com/category/template-2/', title='Posts with template-related tests') Template
+										|  (10)
+									li.cat-item.cat-item-3
+										a(href='http://example.com/category/uncategorized/') Uncategorized
+										|  (12)
+									li.cat-item.cat-item-59
+										a(href='http://example.com/category/unpublished/', title='Posts in this category test unpublished posts.') Unpublished
+										|  (1)
+									li.cat-item.cat-item-60
+										a(href='http://example.com/category/weakhearted/') weakhearted
+										|  (1)
+									li.cat-item.cat-item-61
+										a(href='http://example.com/category/ween/') ween
+										|  (1)
+									li.cat-item.cat-item-62
+										a(href='http://example.com/category/wellhead/') wellhead
+										|  (1)
+									li.cat-item.cat-item-63
+										a(href='http://example.com/category/wellintentioned/') wellintentioned
+										|  (1)
+									li.cat-item.cat-item-64
+										a(href='http://example.com/category/whetstone/') whetstone
+										|  (1)
+									li.cat-item.cat-item-65
+										a(href='http://example.com/category/years/') years
+										|  (1)
+								hr.wp-block-separator
+								h2 Archives
+								ul.wp-block-archives.wp-block-archives-list
+									li
+										a(href='http://example.com/2019/01/') January 2019
+										|  (1)
+									li
+										a(href='http://example.com01/') January 2013
+										|  (5)
+									li
+										a(href='http://example.com03/') March 2012
+										|  (5)
+									li
+										a(href='http://example.com01/') January 2012
+										|  (6)
+									li
+										a(href='http://example.com/2011/03/') March 2011
+										|  (1)
+									li
+										a(href='http://example.com/2010/10/') October 2010
+										|  (1)
+									li
+										a(href='http://example.com/2010/09/') September 2010
+										|  (2)
+									li
+										a(href='http://example.com/2010/08/') August 2010
+										|  (3)
+									li
+										a(href='http://example.com/2010/07/') July 2010
+										|  (1)
+									li
+										a(href='http://example.com/2010/06/') June 2010
+										|  (3)
+									li
+										a(href='http://example.com/2010/05/') May 2010
+										|  (1)
+									li
+										a(href='http://example.com/2010/04/') April 2010
+										|  (1)
+									li
+										a(href='http://example.com/2010/03/') March 2010
+										|  (1)
+									li
+										a(href='http://example.com/2010/02/') February 2010
+										|  (1)
+									li
+										a(href='http://example.com/2010/01/') January 2010
+										|  (1)
+									li
+										a(href='http://example.com/2009/10/') October 2009
+										|  (1)
+									li
+										a(href='http://example.com/2009/09/') September 2009
+										|  (1)
+									li
+										a(href='http://example.com/2009/08/') August 2009
+										|  (1)
+									li
+										a(href='http://example.com/2009/07/') July 2009
+										|  (1)
+									li
+										a(href='http://example.com/2009/06/') June 2009
+										|  (1)
+									li
+										a(href='http://example.com/2009/05/') May 2009
+										|  (1)
+								hr.wp-block-separator
+								h2 Columns
+								.wp-block-columns.has-2-columns
+									.wp-block-column
+										p
+											| Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Curabitur blandit tempus porttitor.
+									.wp-block-column
+										p
+											| Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Curabitur blandit tempus porttitor.
+								hr.wp-block-separator
+								.wp-block-columns.has-3-columns
+									.wp-block-column
+										p
+											| Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+									.wp-block-column
+										p
+											| Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+									.wp-block-column
+										p
+											| Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+								hr.wp-block-separator
+								.wp-block-columns.has-4-columns
+									.wp-block-column
+										p Fusce dapibus, tellus ac cursus commodo, tortor mauris condim entum nibh.
+									.wp-block-column
+										p Fusce dapibus, tellus ac cursus commodo, tortor mauris condim entum nibh.
+									.wp-block-column
+										p Fusce dapibus, tellus ac cursus commodo, tortor mauris condim entum nibh.
+									.wp-block-column
+										p Fusce dapibus, tellus ac cursus commodo, tortor mauris condim entum nibh.
+								hr.wp-block-separator
+								h2 Pull Quotes
+								p
+									| Here is an example of the core pull quote block, set to display centered. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+								figure.wp-block-pullquote.aligncenter
+									blockquote
+										p
+											| Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere est at lobortis.
+										cite Rich Tabor, ThemeBeans.com
+								h3 Wide aligned
+								p
+									| Here is an example of the core pull quote block, set to display with the wide-aligned attribute, if the theme allows it. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+								figure.wp-block-pullquote.alignleft
+									blockquote
+										p Here we have a left-aligned pullquote.
+										cite Rich Tabor
+								p
+									| Donec id elit non mi porta gravida at eget metus. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper.
+								figure.wp-block-pullquote.alignright
+									blockquote
+										p Here we have a right-aligned pullquote.
+										cite Rich Tabor
+								p
+									| Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+								hr.wp-block-separator
+								h2 Image Block
+								p
+									| Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas faucibus mollis interdum.
+								.wp-block-image
+									figure.aligncenter
+										img.wp-image-2117(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+								.wp-block-image
+									figure.aligncenter
+										img.wp-image-2117(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+										figcaption And an image with a caption
+								p
+									| Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+								.wp-block-image
+									figure.alignleft.is-resized
+										img.wp-image-2117(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='', width='275', height='196')
+								p
+									strong Left aligned:
+									|  dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+								.wp-block-image
+									figure.alignright.is-resized
+										img.wp-image-2117(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='', width='281', height='200')
+										figcaption This one is captioned
+								p
+									| Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum. Vestibulum id ligula porta felis euismod semper. Nullam quis risus.
+								hr.wp-block-separator
+								h2 Video Block
+								p
+									| Lets check out the positioning and styling of the video core block. We will check the wide and full alignments too.
+								h2 Cover Image Block
+								p
+									| Check out the positioning and styling of the cover image core block. We will check the wide and full alignments, as well as left/right.
+								.wp-block-cover.has-background-dim.alignleft(style='background-image:url(https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png)')
+									p.wp-block-cover-text Left Aligned Cover Image
+								p
+									strong Left aligned:
+									|  dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+								.wp-block-cover.has-background-dim.alignright(style='background-image:url(https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png)')
+									p.wp-block-cover-text Right Aligned Cover Image
+								p
+									strong Right aligned:
+									|  scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit.
+								p
+									| Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. ﻿
+									strong Center aligned:
+								.wp-block-cover.has-background-dim.aligncenter(style='background-image:url(https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png)')
+									p.wp-block-cover-text Center Aligned Cover Image
+								hr.wp-block-separator
+								h2 Gallery Blocks
+								p Let us check out the positioning and styling of the gallery blocks.
+								h3 Two Column Gallery
+								p Below we have a Gallery Block inserted with two columns and two images.
+								ul.wp-block-gallery.columns-2.is-cropped.alignnone
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+								h3 Three Column
+								p Below we have a Gallery Block inserted with three columns and three images.
+								ul.wp-block-gallery.columns-3.is-cropped.alignnone
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+								h3 Four Column
+								p Below we have a Gallery Block inserted with four columns and four images.
+								ul.wp-block-gallery.columns-4.is-cropped.alignnone
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+								h3 Five Column
+								p Below we have a Gallery Block inserted with five columns and five images.
+								ul.wp-block-gallery.columns-5.is-cropped.alignnone
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+								h3 Four Column, Five Images
+								p
+									| Let us switch things up a bit. Now we have a Gallery Block inserted with four columns and five images.
+								ul.wp-block-gallery.columns-4.is-cropped.alignnone
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+								h3 Three Column, Five Images
+								p Now we have a Gallery Block inserted with three columns and five images.
+								ul.wp-block-gallery.columns-3.is-cropped.alignnone
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+								p Below you will find a Gallery Block inserted with two columns and five images.
+								h3 Two Column, Five Images
+								ul.wp-block-gallery.columns-2.is-cropped.alignnone
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+									li.blocks-gallery-item
+										figure
+											img(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='')
+								h3 Three Column, Four Images
+								p Below you will find a Gallery Block inserted with three columns and four images.
+								ul.wp-block-gallery.columns-3.is-cropped.alignnone
+									li.blocks-gallery-item
+										figure
+											img.wp-image-2124(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='', data-id='2124')
+									li.blocks-gallery-item
+										figure
+											img.wp-image-2125(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='', data-id='2125')
+									li.blocks-gallery-item
+										figure
+											img.wp-image-2117(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='', data-id='2117')
+									li.blocks-gallery-item
+										figure
+											img.wp-image-2119(src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', alt='', data-id='2119')
+								h2 File upload
+								.wp-block-file
+									a(href='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png') 530632250
+									a.wp-block-file__button(href='http://wordpress/wp-content/uploads/2019/01/530632250-1.jpg', download='') Download
+								h2 Youtube
+								figure.wp-block-embed-youtube.wp-block-embed.is-type-video.is-provider-youtube.wp-embed-aspect-16-9.wp-has-aspect-ratio
+									.wp-block-embed__wrapper
+										iframe(src='https://www.youtube.com/embed/0mdgDIpAKxI?feature=oembed', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='', width='900', height='506', frameborder='0')
+								h2 Last comments
+								ol.wp-block-latest-comments.has-avatars.has-dates.has-excerpts
+									li.wp-block-latest-comments__comment
+										img.avatar.avatar-48.photo.wp-block-latest-comments__comment-avatar(alt='', src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', srcset='http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=96&d=mm&r=g 2x', width='48', height='48')
+										article
+											footer.wp-block-latest-comments__comment-meta
+												a.wp-block-latest-comments__comment-author(href='http://example.org/') John Doe
+												|  on
+												a.wp-block-latest-comments__comment-link(href='http://example.com/2009/08/06/edge-case-no-content/#comment-30') Edge Case: No Content
+												time.wp-block-latest-comments__comment-date(datetime='2013-03-14T12:35:07+00:00') March 14, 2013
+											.wp-block-latest-comments__comment-excerpt
+												p
+													| Having no content in the post should have no adverse effects on the layout or functionality.
+									li.wp-block-latest-comments__comment
+										img.avatar.avatar-48.photo.wp-block-latest-comments__comment-avatar(alt='', src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', srcset='http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=96&d=mm&r=g 2x', width='48', height='48')
+										article
+											footer.wp-block-latest-comments__comment-meta
+												a.wp-block-latest-comments__comment-author(href='http://example.org/') Jane Doe
+												|  on
+												a.wp-block-latest-comments__comment-link(href='http://example.com01/04/template-password-protected/#comment-29') Protected: Template: Password Protected (the password is “enter”)
+												time.wp-block-latest-comments__comment-date(datetime='2013-03-14T11:56:08+00:00') March 14, 2013
+											.wp-block-latest-comments__comment-excerpt
+												p This comment should not be visible until the password is entered.
+									li.wp-block-latest-comments__comment
+										img.avatar.avatar-48.photo.wp-block-latest-comments__comment-avatar(alt='', src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', srcset='http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=96&d=mm&r=g 2x', width='48', height='48')
+										article
+											footer.wp-block-latest-comments__comment-meta
+												a.wp-block-latest-comments__comment-author(href='http://example.org/') Jane Doe
+												|  on
+												a.wp-block-latest-comments__comment-link(href='http://example.com01/03/template-comments/#comment-23') Template: Comments
+												time.wp-block-latest-comments__comment-date(datetime='2013-03-14T11:30:33+00:00') March 14, 2013
+											.wp-block-latest-comments__comment-excerpt
+												p Thanks for all the comments, everyone!
+									li.wp-block-latest-comments__comment
+										img.avatar.avatar-48.photo.wp-block-latest-comments__comment-avatar(alt='', src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', srcset='http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=96&d=mm&r=g 2x', width='48', height='48')
+										article
+											footer.wp-block-latest-comments__comment-meta
+												a.wp-block-latest-comments__comment-author(href='http://example.org/') John Doe
+												|  on
+												a.wp-block-latest-comments__comment-link(href='http://example.com01/03/template-comments/#comment-22') Template: Comments
+												time.wp-block-latest-comments__comment-date(datetime='2013-03-14T11:27:54+00:00') March 14, 2013
+											.wp-block-latest-comments__comment-excerpt
+												p We use these tests all the time! Killer stuff!
+									li.wp-block-latest-comments__comment
+										img.avatar.avatar-48.photo.wp-block-latest-comments__comment-avatar(alt='', src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png', srcset='http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=96&d=mm&r=g 2x', width='48', height='48')
+										article
+											footer.wp-block-latest-comments__comment-meta
+												a.wp-block-latest-comments__comment-author(href='http://example.org/') John Doe
+												|  on
+												a.wp-block-latest-comments__comment-link(href='http://example.com01/03/template-comments/#comment-21') Template: Comments
+												time.wp-block-latest-comments__comment-date(datetime='2013-03-14T11:23:24+00:00') March 14, 2013
+											.wp-block-latest-comments__comment-excerpt
+												p We are totally going to blog about these tests!
+								h2 Vimeo
+								figure.wp-block-embed-vimeo.wp-block-embed.is-type-video.is-provider-vimeo.wp-embed-aspect-9-16.wp-has-aspect-ratio.wp-embed-aspect-16-9
+									.wp-block-embed__wrapper
+										iframe(src='https://player.vimeo.com/video/74924211?app_id=122963', title='Relaxation Video - Water Melodies with Relaxing Nature Scenes with Piano Music', allow='autoplay; fullscreen', allowfullscreen='', width='900', height='506', frameborder='0')
+									figcaption test caption
+						.meta
+							ul
+								li
+									| Posted in
+									a(href='http://example.com/category/edge-case-2/', rel='category tag') Edge Case
+								li
+									span
+										| Comments Off
+										span.screen-reader-text  on Gutemberg Block Unit Test
+								li
+									| Tags:
+									a(href='http://example.com/tag/content-2/', rel='tag') content
+									| ,
+									a(href='http://example.com/tag/css/', rel='tag') css
+									| ,
+									a(href='http://example.com/tag/edge-case/', rel='tag') edge case
+									| ,
+									a(href='http://example.com/tag/lists-2/', rel='tag') lists
+									| ,
+									a(href='http://example.com/tag/markup-2/', rel='tag') markup
+						.edit-block
+							a.post-edit-link(href='http://example.com/wp-admin/post.php?post=1000&action=edit&lang=en') Edit
+			include pug/common/_footer
